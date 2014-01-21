@@ -50,7 +50,7 @@ describe('Run Selenium tests', function() {
    it('Click Visa alla!', function(done) {
 		client.url('http://109.74.8.219/filter', done);
 		setTimeout(function(){
-		         client.click("//*[@id='collapseFilter']/div[1]/div[2]/div/div[1]/div/div/a", function(err, res){		
+			client.click("//*[@id='collapseFilter']/div[1]/div[2]/div/div[1]/div/div/a", function(err, res){		
 				expect(err).to.be.null;	
 				checktext(done);
 			});
@@ -61,10 +61,8 @@ describe('Run Selenium tests', function() {
     it('Click Capio Citykliniken Lund!', function(done) {
 		client.url('http://109.74.8.219/filter', done);
 		setTimeout(function(){
-			client.click("//*[@id='collapseFilter']/div[1]/div[2]/div/div[3]/div/div/a", function(err, res){		
-				//expect(err).to.be.null;	
+			client.click("//*[@id='collapseFilter']/div[1]/div[2]/div/div[3]/div/div/a", function(err, res){
 				checktext(done);
-				//done();
 			});
 		},10000);
 
@@ -94,7 +92,7 @@ describe('Run Selenium tests', function() {
     it('Click Visa alla!', function(done) {
 		client.url('http://109.74.8.219/filter', done);
 		setTimeout(function(){
-		         client.click("//*[@id='collapseFilter']/div[2]/div[2]/div/div[1]/div/a", function(err, res){		
+			client.click("//*[@id='collapseFilter']/div[2]/div[2]/div/div[1]/div/a", function(err, res){		
 				checktext(done);
 			});
 		},10000);
