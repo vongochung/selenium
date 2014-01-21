@@ -121,7 +121,7 @@ describe('Run Selenium tests', function() {
 
     it('Click Vaccination!', function(done) {
 		client.url('http://109.74.8.219/filter', done);
-		setTimeout(function(){         
+		setTimeout(function(){
 			client.click("//*[@id='collapseFilter']/div[2]/div[2]/div/div[7]/div/a", function(err, res){			
 				checktext(done);
 			});
