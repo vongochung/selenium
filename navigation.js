@@ -18,11 +18,11 @@ describe('Run Selenium tests', function() {
 
 
     it('should see the correct title', function(done) {
-         client.getTitle(function(err, title){
-	         expect(title).to.have.string('Filter');
-	         done();
-      	 });
-    });
+		client.getTitle(function(err, title){
+			expect(title).to.have.string('Filter');
+			done();
+		});
+	});
 
     it('should go to the correct link in navigation', function(done) {
 
@@ -46,7 +46,7 @@ describe('Run Selenium tests', function() {
 
 	done();
 
-    });
+	});
 	
 
     after(function(done) {
