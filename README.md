@@ -48,7 +48,11 @@ Download Selenium Server [This link]( http://selenium.googlecode.com/files/selen
 
 # Run scripts test#
 > Test Navigation: 
+
+
 	/usr/lib/node_modules/mocha/bin/mocha /home/mycareflow/www/automation_test/navigation.js -t 5000
+	
+	
 > Test Filter:
     /usr/lib/node_modules/mocha/bin/mocha /home/mycareflow/www/automation_test/filter.js -t 5000
 	
