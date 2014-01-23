@@ -10,7 +10,7 @@ var expect = require('chai').expect,
 	
 });
 
-var webdriver = require('/usr/lib/node_modules/selenium-webdriver');
+//var webdriver = require('/usr/lib/node_modules/selenium-webdriver');
 
 
 function checktext(done){
@@ -47,7 +47,7 @@ describe('Run Selenium tests', function() {
 			done();
 		});
 		
-    });
+	});
 	
 
 
@@ -57,7 +57,7 @@ describe('Run Selenium tests', function() {
 				done();
 			});
 		},5000);
-    });
+	});
 
 
 	it('Click to Visa alla detaljer!', function(done) {
@@ -65,9 +65,9 @@ describe('Run Selenium tests', function() {
 			client.click("//*[@id='filter-page']/section[1]/div[2]/div[2]/div[1]/div/a[2]", function(err, res){	
 				expect(err).to.be.null;
 				checktext(done);
-			});  
+			});
 		},5000);
-    });
+	});
 	
 	
 	it('Click to Dölj alla detaljer!', function(done) {
@@ -82,8 +82,7 @@ describe('Run Selenium tests', function() {
 				});
 			});
 		},5000);
-         
-    });
+	});
 
 	/*it('scroll to one element random in timeline!', function(done) {
 		setTimeout(function(){		
