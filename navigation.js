@@ -36,7 +36,6 @@ describe('Run Selenium tests', function() {
 			arr_element.push(element);
 		}
 		arr_element.forEach(function (dataItem) {
-			console.log(dataItem);
 			client.click(dataItem, function(err, res){		
 				expect(err).to.be.null;
 			});
@@ -50,7 +49,6 @@ describe('Run Selenium tests', function() {
 	
 
     after(function(done) {
-	console.log("Done");
         client.end(done);
     });
 
