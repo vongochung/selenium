@@ -4,7 +4,6 @@ var expect = require('chai').expect,
     client = webdriverjs.remote({
     desiredCapabilities: {
       browserName: 'phantomjs'
-      //'phantomjs.cli.args': '--debug=true --webdriver --webdriver-logfile=webdriver.log --webdriver-loglevel=DEBUG'
       //browserName: 'firefox'
     },
     logLevel: 'silent'
@@ -37,9 +36,8 @@ describe('Run Selenium tests', function() {
     it('Click to filter!', function(done) {
 		client.url('http://109.74.8.219/filter', done);
 		setTimeout(function(){
-			client.click("//*[@id='filter-page']/section[1]/div[1]/div[3]/h1/a", function(err, res){//a.collapsed		
+			client.click("//*[@id='filter-page']/section[1]/div[1]/div[3]/h1/a", function(err, res){	
 				expect(err).to.be.null;	
-				//console.log(err);
 			});
 
 		},10000);
